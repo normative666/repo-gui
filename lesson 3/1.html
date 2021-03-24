@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nums = 0;
+        while (nums <= 100) {
+            let check = true;
+            for (let i = 2; i < nums; i++) {
+                if (nums % i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) console.log(nums);
+            nums++;
+        }
+
+    </script>
+</body>
+
+</html>

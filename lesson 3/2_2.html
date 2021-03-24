@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let basket = [
+            {
+                product: "pen",
+                price: 100
+            },
+            {
+                product: "pencil",
+                price: 200
+            },
+            {
+                product: "file",
+                price: 300
+            },
+            {
+                product: "paper",
+                price: 400
+            }
+        ];
+        let basketPrice = 0;
+        for (let prod of basket) {
+            basketPrice += prod.price;
+            console.log("Товар " + prod.product + " стоит: " + prod.price);
+        }
+
+        console.log("Стоимость корзины: " + basketPrice + " rub ");
+
+        function countBasketPrice(basket) {
+            let funBasketPrice = 0;
+            for (let prod of basket) {
+                funBasketPrice += prod.price;
+            }
+            return funBasketPrice;
+        }
+
+        console.log("Стоимость корзины: " + countBasketPrice(basket) + " rub");
+
+    </script>
+</body>
+
+</html>
